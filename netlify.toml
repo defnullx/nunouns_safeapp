@@ -7,16 +7,14 @@
   REACT_APP_ENABLE_HISTORY = "true"
 
 [context."master".environment]
-  REACT_APP_CHAIN_ID = "4"
+  REACT_APP_CHAIN_ID = "5"
   NETLIFY_USE_YARN = "true"
   REACT_APP_ENABLE_HISTORY = "true"
   REACT_APP_INFURA_PROJECT_ID="7f36f23921f941c5a7ce73cb775bac41"
   REACT_APP_ETHERSCAN_API_KEY="MH7B5CCPAPC7QHHVKQZT7KCYPQK4Y4VAIY"
-  REACT_APP_RINKEBY_JSONRPC="https://eth-rinkeby.alchemyapi.io/v2/4WB2GIdI4k5lvXeotvLAxvZlJETAj7sa"
-  REACT_APP_RINKEBY_WSRPC="wss://eth-rinkeby.alchemyapi.io/v2/4WB2GIdI4k5lvXeotvLAxvZlJETAj7sa"
-  REACT_APP_MAINNET_JSONRPC="https://eth-mainnet.g.alchemy.com/v2/U4lVrHrT86kWcS-t2TaXxn1gmWDT0Iy8"
-  REACT_APP_MAINNET_WSRPC="wss://eth-mainnet.g.alchemy.com/v2/U4lVrHrT86kWcS-t2TaXxn1gmWDT0Iy8"
-
+  REACT_APP_GOERLI_JSONRPC="https://eth-goerli.g.alchemy.com/v2/TrHg0mN8v1VdEiud4-kwlKq1MNZf0Gch"
+  REACT_APP_GOERLI_WSRPC="wss://eth-goerli.g.alchemy.com/v2/TrHg0mN8v1VdEiud4-kwlKq1MNZf0Gch"
+  
 [context.deploy-preview.environment]
   REACT_APP_CHAIN_ID = "1"
   REACT_APP_ENABLE_HISTORY = "true"

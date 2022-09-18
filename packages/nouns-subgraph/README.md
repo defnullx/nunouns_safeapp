@@ -24,7 +24,7 @@ yarn run graph auth https://api.thegraph.com/deploy/ $ACCESS_TOKEN
 
 ```sh
 # Official Subgraph
-yarn prepare:[network] # Supports rinkeby and mainnet
+yarn prepare:[network] # Supports goerli and mainnet
 
 # Fork
 yarn --silent mustache config/[network]-fork.json subgraph.yaml.mustache > subgraph.yaml
@@ -40,7 +40,7 @@ yarn codegen
 
 ```sh
 # Official Subgraph
-yarn deploy:[network] # Supports rinkeby and mainnet
+yarn deploy:[network] # Supports goerli and mainnet
 
 # Fork
 yarn deploy [organization]/[subgraph-name]

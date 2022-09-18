@@ -9,12 +9,12 @@ task(
   .addFlag('autoDeploy', 'Deploy all contracts without user interaction')
   .addFlag('updateConfigs', 'Write the deployed addresses to the SDK and subgraph configs')
   .addOptionalParam('weth', 'The WETH contract address')
-  .addOptionalParam('noundersdao', 'The nounders DAO contract address', '0x6F22c27d0310EdDd9b119c372E2eb623902f8d20')
-  .addOptionalParam('nouncubator', 'The nouncubator contract address', '0x57350814ce457E16025771AB4dC17359429d72B8')
+  .addOptionalParam('noundersdao', 'The nounders DAO contract address', '0x5d432B34520fb1784D3Bb9f7d98e529834eB14BE')
+  .addOptionalParam('nouncubator', 'The nouncubator contract address', '0xfA5329a9e2dA927a1C6108Ad1038C3FEB76e2e78')
   .addOptionalParam(
     'auctionTimeBuffer',
     'The auction time buffer (seconds)',
-    2 * 60 /* 2 minutes */,
+    30 /* 30 seconds */,
     types.int,
   )
   .addOptionalParam(
@@ -32,27 +32,17 @@ task(
   .addOptionalParam(
     'auctionDuration',
     'The auction duration (seconds)',
-    60 * 60 * 3 /* 3 hours */,
+    60 * 10 /* 10 minutes */,
     types.int,
   )
-  .addOptionalParam(
-    'timelockDelay',
-    'The timelock delay (seconds)',
-    60 * 60 * 24 * 2 /* 2 days */,
-    types.int,
-  )
+  .addOptionalParam('timelockDelay', 'The timelock delay (seconds)', 60 /* 1 min */, types.int)
   .addOptionalParam(
     'votingPeriod',
     'The voting period (blocks)',
-    Math.round(4 * 60 * 24 * (60 / 13)) /* 4 days (13s blocks) */,
+    80 /* 20 min (15s blocks) */,
     types.int,
   )
-  .addOptionalParam(
-    'votingDelay',
-    'The voting delay (blocks)',
-    Math.round(3 * 60 * 24 * (60 / 13)) /* 3 days (13s blocks) */,
-    types.int,
-  )
+  .addOptionalParam('votingDelay', 'The voting delay (blocks)', 1, types.int)
   .addOptionalParam(
     'proposalThresholdBps',
     'The proposal threshold (basis points)',

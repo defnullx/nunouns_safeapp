@@ -15,7 +15,7 @@ const proxyRegistries: Record<number, string> = {
 const wethContracts: Record<number, string> = {
   [ChainId.Mainnet]: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   [ChainId.Goerli]: '0xc778417e063141139fce010982780140aa0cd5ab',
-  };
+};
 
 const NOUNS_ART_NONCE_OFFSET = 4;
 const AUCTION_HOUSE_PROXY_NONCE_OFFSET = 9;
@@ -29,7 +29,7 @@ task('deploy', 'Deploys NFTDescriptor, NounsDescriptor, NounsSeeder, and NounsTo
   .addOptionalParam(
     'auctionTimeBuffer',
     'The auction time buffer (seconds)',
-    30 /* 30 seconds */,
+    2 * 60 /* 2 minutes */,
     types.int,
   )
   .addOptionalParam(
@@ -47,17 +47,27 @@ task('deploy', 'Deploys NFTDescriptor, NounsDescriptor, NounsSeeder, and NounsTo
   .addOptionalParam(
     'auctionDuration',
     'The auction duration (seconds)',
-    60 * 10 /* 10 minutes */,
+    60 * 60 * 3 /* 3 hours */,
     types.int,
   )
-  .addOptionalParam('timelockDelay', 'The timelock delay (seconds)', 60 /* 1 min */, types.int)
+  .addOptionalParam(
+    'timelockDelay',
+    'The timelock delay (seconds)',
+    60 * 60 * 24 * 2 /* 2 days */,
+    types.int,
+  )
   .addOptionalParam(
     'votingPeriod',
     'The voting period (blocks)',
-    80 /* 20 min (15s blocks) */,
+    Math.round(4 * 60 * 24 * (60 / 13)) /* 4 days (13s blocks) */,
     types.int,
   )
-  .addOptionalParam('votingDelay', 'The voting delay (blocks)', 1, types.int)
+  .addOptionalParam(
+    'votingDelay',
+    'The voting delay (blocks)',
+    Math.round(3 * 60 * 24 * (60 / 13)) /* 3 days (13s blocks) */,
+    types.int,
+  )
   .addOptionalParam(
     'proposalThresholdBps',
     'The proposal threshold (basis points)',

@@ -16,13 +16,11 @@ promptjs.delimiter = '';
 
 const proxyRegistries: Record<number, string> = {
   [ChainId.Mainnet]: '0xa5409ec958c83c3f309868babaca7c86dcb077c1',
-  [ChainId.Rinkeby]: '0xf57b2c51ded3a29e6891aba85459d600256cf317',
+  [ChainId.Goerli]: '0xf57b2c51ded3a29e6891aba85459d600256cf317',
 };
 const wethContracts: Record<number, string> = {
   [ChainId.Mainnet]: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
-  [ChainId.Ropsten]: '0xc778417e063141139fce010982780140aa0cd5ab',
-  [ChainId.Rinkeby]: '0xc778417e063141139fce010982780140aa0cd5ab',
-  [ChainId.Kovan]: '0xd0a1e359811322d97991e03f863a0c30c2cf029c',
+  [ChainId.Goerli]: '0xc778417e063141139fce010982780140aa0cd5ab',
 };
 
 const AUCTION_HOUSE_PROXY_NONCE_OFFSET = 6;
@@ -81,7 +79,7 @@ task('deploy-short-times-descriptorv1', 'Deploy all Nouns contracts with NounsDe
     const [deployer] = await ethers.getSigners();
 
     // prettier-ignore
-    const proxyRegistryAddress = proxyRegistries[network.chainId] ?? proxyRegistries[ChainId.Rinkeby];
+    const proxyRegistryAddress = proxyRegistries[network.chainId] ?? proxyRegistries[ChainId.Goerli];
 
     if (!args.noundersdao) {
       console.log(

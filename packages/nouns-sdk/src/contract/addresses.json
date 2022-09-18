@@ -1,0 +1,38 @@
+{
+  "1": {
+    "nounsToken": "0x4c597608A1045ac3089B4683f2787AF8f991139D",
+    "nounsSeeder": "0x8f4dfC482569f014D7D8CD1CF7d0898F82fA04ea",
+    "nounsDescriptor": "0xF45d0B2dD8433edd3EAC8358795F0532eF5D20F8",
+    "nftDescriptor": "0x283711a1fAB197B403910248a503673E059f0743",
+    "nounsAuctionHouse": "0xd6a7654FAb7566fFbB43B18c98E7d73d66419a98",
+    "nounsAuctionHouseProxy": "0xeEA7C299cEC5b22DF9F27472C9D8bFe99d31a690",
+    "nounsAuctionHouseProxyAdmin": "0x76C938a436a33cBF14795Fa72e5a3cB5AE0adaEB",
+    "nounsDaoExecutor": "0x568D1A8EB95AFC16668614b729Ef0aE8917C0eDd",
+    "nounsDAOProxy": "0x20ebbCd0FE4f87773685cB232Bd9b8f261BF0d4A",
+    "nounsDAOLogicV1": "0x26EF2D80C6e2a18e815C3Bb721eeEeCFC9473c68"
+  },
+  "4": {
+    "nounsToken": "0xa9CB12fe80d827cf5fd0eC2e937F32FE9Af324ad",
+    "nounsSeeder": "0x16D9A5fe6CEe746E884B7F36604cEFB2690F23A9",
+    "nounsDescriptor": "0x8DaB4Fe56c4fc75eF19a263cBD8EA4085912bFB8",
+    "nftDescriptor": "0x93A66c4Fe6132913cEBB77016349a31C6b38296f",
+    "nounsAuctionHouse": "0x486B2C169a942f39C2234A4B6Be309059524d842",
+    "nounsAuctionHouseProxy": "0xA68Cc1Bf956BB2A335be7eCb89aE3097d490f804",
+    "nounsAuctionHouseProxyAdmin": "0xDd002fe1DD212E6F4B76B77C37a960Ca4Fc5b5ea",
+    "nounsDaoExecutor": "0xcfe45feC388Da7BE00CE0239F783484e1Ce3e0d4",
+    "nounsDAOProxy": "0x9b97341ed3dFc45a2b437805Aedb946f9D01d4A4",
+    "nounsDAOLogicV1": "0xB8476a2B9Af58914FDeFe610B91800621b75A195"
+  },
+  "31337": {
+    "nounsToken": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+    "nounsSeeder": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+    "nounsDescriptor": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+    "nftDescriptor": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "nounsAuctionHouse": "0x2279b7a0a67db372996a5fab50d91eaa73d2ebe6",
+    "nounsAuctionHouseProxy": "0x610178da211fef7d417bc0e6fed39f05609ad788",
+    "nounsAuctionHouseProxyAdmin": "0x8a791620dd6260079bf849dc5567adc3f2fdc318",
+    "nounsDaoExecutor": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
+    "nounsDAOProxy": "0x0dcd1bf9a1b36ce34237eeafef220932846bcd82",
+    "nounsDAOLogicV1": "0xa51c1fc2f0d1a1b8494ed1fe312d7c3a78ed91c0"
+  }
+}

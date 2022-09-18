@@ -1,0 +1,15 @@
+{
+  "network": "homestead",
+  "nounsToken": {
+    "address": "0x5e292Bc375c5524B5c352A3A080D03817356E549",
+    "startBlock": 15387019
+  },
+  "nounsAuctionHouse": {
+    "address": "0x2E1D51101022513e0A68D690B77663917fe23c3b",
+    "startBlock": 15387019
+  },
+  "nounsDAO": {
+    "address": "0xb915ec566e47adA1b34B32ACab7966EB36C514f9",
+    "startBlock": 15387019
+  }
+}

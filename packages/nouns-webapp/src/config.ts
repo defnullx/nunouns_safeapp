@@ -78,7 +78,7 @@ const app: Record<SupportedChains, AppConfig> = {
 
 const externalAddresses: Record<SupportedChains, ExternalContractAddresses> = {
   [ChainId.Goerli]: {
-    lidoToken: '0xF4242f9d78DB7218Ad72Ee3aE14469DBDE8731eD',
+    lidoToken: '0xc9063c0da0E74F3c2628ece4D80E8D4702e6bFC1',
   },
   [ChainId.Mainnet]: {
     lidoToken: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',

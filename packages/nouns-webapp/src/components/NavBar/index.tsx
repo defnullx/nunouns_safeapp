@@ -5,7 +5,7 @@ import { useEtherBalance } from '@usedapp/core';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar, Container } from 'react-bootstrap';
-import config from '../../config';
+import config, { CHAIN_ID } from '../../config';
 import { utils } from 'ethers';
 import { buildEtherscanHoldingsLink } from '../../utils/etherscan';
 import { ExternalURL, externalURL } from '../../utils/externalURL';
@@ -58,6 +58,11 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/" className={classes.navBarBrand}>
               <img src={logo} className={classes.navBarLogo} alt="nuNouns DAO logo" />
             </Navbar.Brand>
+            {Number(CHAIN_ID) !== 1 && (
+              <Nav.Item>
+                TESTNET
+              </Nav.Item>
+            )}
             <Nav.Item>
               {treasuryBalance && (
                 <Nav.Link

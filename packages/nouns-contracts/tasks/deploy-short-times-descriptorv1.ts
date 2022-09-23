@@ -16,11 +16,11 @@ promptjs.delimiter = '';
 
 const proxyRegistries: Record<number, string> = {
   [ChainId.Mainnet]: '0xa5409ec958c83c3f309868babaca7c86dcb077c1',
-  [ChainId.Goerli]: '0xf57b2c51ded3a29e6891aba85459d600256cf317',
+  [ChainId.Goerli]: '0x2417cbb7247F91C9F162574003F88dc06C167696',
 };
 const wethContracts: Record<number, string> = {
   [ChainId.Mainnet]: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
-  [ChainId.Goerli]: '0xc778417e063141139fce010982780140aa0cd5ab',
+  [ChainId.Goerli]: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
 };
 
 const AUCTION_HOUSE_PROXY_NONCE_OFFSET = 6;
